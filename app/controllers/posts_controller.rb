@@ -5,12 +5,8 @@ class PostsController < ApplicationController
   end
   
   def create
-メモ投稿機能続き
     post = Post.create(content: params[:content], checked: false)
     render json:{ post: post }
-
-
-master
   end
 
   def checked
